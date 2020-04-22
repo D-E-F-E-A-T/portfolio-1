@@ -1,0 +1,407 @@
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #c1fff4;
+}
+
+h2 {
+  color: #001a21;
+  text-align: center;
+}
+
+p {
+  /* This was default browser setting. I had to change it in order to fit the paragraphs in the block without any white space. */
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+hr {
+  margin: 6% auto;
+  width: 48%;
+  border: 0;
+  height: 0.1vw;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.intro-icons {
+  width: 19%;
+  display: block;
+}
+
+/* Header */
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 2vw 0.6vw 2vw;
+  align-items: center;
+  background-color: #001a21;
+}
+
+.nav-bar-avatar {
+  justify-content: flex-start;
+  height: 6vw;
+  display: block;
+}
+
+.nav-links {
+  flex: 3;
+  justify-content: flex-end;
+  display: flex;
+  list-style: none;
+}
+
+.nav-link {
+  margin: 0 1.4vw;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: large;
+  transition: all 0.4s ease 0s;
+}
+
+.nav-link:hover {
+  color: #a4b0bd;
+  transition: all 0.4s ease 0s;
+}
+
+/* Image Intro Section */
+
+.top-container {
+  position: relative;
+  width: 100%;
+}
+
+.text-block {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-family: "Sacramento";
+  font-size: 4.8vw;
+  margin-bottom: 0;
+  color: #142850;
+  animation: drop 1.2s ease;
+}
+
+.sub-heading {
+  font-size: 1.6vw;
+  margin-top: 0;
+  color: #0a3d62;
+}
+
+.main-body-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  vertical-align: bottom;
+  /* I used vertical align so the tiny white space between the top and middle container can be managed. It pushed the image to the bottom. I can also use display:block; isntead of vertical-align to do that. */
+}
+
+/* Intro Section */
+
+#introduction {
+  text-align: center;
+}
+
+.profile {
+  margin-top: 0;
+  margin-bottom: 4%;
+}
+
+.avatar-img {
+  margin-top: 4%;
+  width: 14%;
+}
+
+.hi {
+  color: #001a21;
+  font-family: "Sacramento";
+  font-size: 3.6rem;
+  margin: 1% auto;
+}
+
+.intro {
+  width: 30%;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+/* Skills Section */
+
+.skills {
+  width: 70%;
+  margin: 3% auto;
+  display: flex;
+}
+
+.skill-intro {
+  flex: 2;
+  margin-left: 4vw;
+  padding-top: 1vw;
+  padding-right: 6vw;
+  line-height: 2;
+}
+
+.laptop-img {
+  margin-left: 4vw;
+}
+
+/* Hobbies Section  */
+
+.hobby-section {
+  margin: 3% auto;
+}
+
+.hobbies {
+  width: 70%;
+  margin-left: 20vw;
+}
+
+.hobby-row {
+  margin: 4% auto;
+  text-align: left;
+  display: flex;
+}
+
+.hobby-h {
+  margin-right: 10vw;
+  padding-bottom: 2vw;
+}
+
+.movie-intro {
+  flex: 2;
+  line-height: 2;
+}
+
+.game-intro {
+  flex: 2;
+  line-height: 2;
+  margin-left: 4vw;
+  margin-right: 8vw;
+}
+
+.movie-img {
+  margin-right: 8vw;
+}
+
+/* Project Section */
+
+.projects {
+  width: 70%;
+  margin: 3% auto;
+  display: flex;
+}
+
+.project-intro {
+  flex: 2;
+  margin: 0 1.6vw 0 4vw;
+  line-height: 2;
+  padding-top: 4vw;
+}
+
+/* Contact Section */
+
+.bottom-hr {
+  margin: 1.6% auto 6%;
+  width: 48%;
+  border: 0;
+  height: 0.1vw;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+#contact-section {
+  margin-top: 4% auto 0;
+  padding-bottom: 2%;
+}
+
+.contact-p {
+  width: 40%;
+  margin: 2% auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  text-align: center;
+}
+
+.btn {
+  color: black !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #c1fff4;
+  padding: 0.94vw;
+  border: 0.16vw solid #001a21 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+
+.btn:hover {
+  color: #ffffff !important;
+  background: #001a21;
+  border-color: #001a21 !important;
+  transition: all 0.4s ease 0s;
+}
+
+/* Footer Section */
+
+.footer {
+  background-color: #001a21;
+  padding-top: 2%;
+}
+
+.social-media-logo-image {
+  width: 48%;
+  margin-top: 0.94vw;
+  transition: all 0.6s ease 0s;
+}
+
+.social-media-logo-image:hover {
+  /* this is how you can change the color of an image using filter atrribute */
+  filter: invert(99%) sepia(1%) saturate(24%) hue-rotate(333deg)
+    brightness(114%) contrast(91%);
+  transition: all 0.6s ease 0s;
+}
+
+.social-media-logo {
+  display: flex;
+  place-content: center;
+}
+
+.social-media-logo-list {
+  list-style: none;
+  margin: 0 2%;
+}
+
+.social-media-logo-link {
+  display: block;
+  width: 3.9vw;
+  height: 3.9vw;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform: translate(0, 0px);
+  transform: translate(0, 0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer ul li:nth-child(1) a:hover {
+  background-color: #55acee;
+}
+
+.footer ul li:nth-child(2) a:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.footer ul li:nth-child(3) a:hover {
+  background-color: #0077b5;
+}
+
+.copyright-text {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  color: white;
+}
+
+/* Animations */
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translate(0, -2.6vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+  .nav-link {
+    font-size: 10px;
+    margin: 0 1.4vw;
+  }
+
+  h1 {
+    font-size: 32px;
+    height: 36px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  .hi {
+    font-size: 26px;
+  }
+
+  .sub-heading {
+    font-size: 11px;
+  }
+
+  p {
+    font-size: 9px;
+    line-height: 1.6;
+  }
+
+  .intro {
+    line-height: 1.6;
+  }
+
+  .project-img {
+    margin-right: 4.8vw;
+  }
+
+  .btn {
+    font-size: 8px;
+  }
+
+  .social-media-logo-link {
+    width: 5.56vw;
+    height: 5.56vw;
+  }
+
+  .social-media-logo-image {
+    margin-top: 1.2vw;
+  }
+}
